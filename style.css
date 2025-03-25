@@ -107,7 +107,8 @@
     transition: all 0.3s ease;
 }
 #about, #project-container, .education-details {
-    background-color: #d4d4d6; /* light gray */
+    /* background-color: #d4d4d6;  */
+    background-color: #e9e9f3; 
 }
 
 #foot{
@@ -117,13 +118,18 @@
 }
 .footer{
     height: 50px;
-    background-color:  #919197;
+    background-color:  #0303f1;
+    color: white;
 }
 .card{
     background-color: #d9d9df;
 }
 .navbar{
-    background-color:  #919197;
+    /* background-color:  #919197; */
+    background-color:  #0303f1;
+}
+body{
+    background-color: #f2f2ff;
 }
 /* Rotate animation */
 @keyframes rotateIn {
@@ -142,4 +148,42 @@
     font-weight: 900;
     animation: rotateIn 1.5s ease-out forwards;
      
+}
+.toggle-btn {
+    padding: 10px 20px;
+    border: none;
+    background: rgb(9, 87, 206);
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 25px;
+    margin: 15px 15px 10px 15px;
+}
+
+.toggle-btn:hover {
+    background: darkblue;
+}
+.dark-mode {
+    background-color: black;
+    color: rgb(235, 229, 229);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode #about,.dark-mode #project-container,.dark-mode .education-details{
+    background-color: black;
+    color: rgb(236, 233, 233);
+}
+.dark-mode .card{
+    background-color: black;
+    color: rgb(235, 229, 229);
+    border: 1px solid white;
+}
+.theme-btn{
+    display: flex;
+    justify-content: end;
 }
