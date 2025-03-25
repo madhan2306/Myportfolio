@@ -1,25 +1,41 @@
-#my-pic{
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+
+body,body button {
+    font-family: 'Raleway', sans-serif; /* Use Raleway for body text */
+}
+
+h1, h2, h3,.navbar {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for headings */
+}
+
+
+#my-pic {
     border-radius: 100%;
 }
-.header-box{
+
+.header-box {
     margin-top: 50px;
     text-align: center;
 }
-#bio{
+
+#bio {
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     color: gray;
 }
-.buttons button{
+
+.buttons button {
     margin: 0 5px 0 5px;
     font-weight: bolder;
 }
-#name{
+
+#name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
 }
-#about{
+
+#about {
     margin: 50px;
     padding: 50px;
     border: 2px grey solid;
@@ -27,44 +43,53 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 
 }
-#tech-stack{
+
+#tech-stack {
     /* text-align: center; */
     margin-top: 50px;
 }
-#projects{
-    
+
+#projects {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
+
 }
-#project-container,.education-details{
+
+#project-container,
+.education-details {
     margin: 50px;
     padding: 0 50px 50px 50px;
     border: 2px grey solid;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
-    
+
 }
-#project-container h2{
+
+#project-container h2 {
     padding: 15px;
     margin-left: 0;
     font-weight: bold;
 }
-#about h2{
+
+#about h2 {
     font-weight: bold;
 }
-.education-details{
+
+.education-details {
     width: 80%;
     margin: 50px 50px 50px 130px;
 }
-.education-details .card{
+
+.education-details .card {
     margin-top: 15px;
     padding: 10px;
 }
-.education-details h2{
-   font-weight: bold;
-   margin-top: 5px;
+
+.education-details h2 {
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 
@@ -73,29 +98,31 @@
         width: 80%;
         height: auto;
     }
-    
+
     #projects {
         flex-direction: column;
         align-items: center;
-       
+
     }
 
     .card {
         width: 90%;
         margin: 20px;
     }
+
     .education-details {
         width: 80%;
         margin-left: 50px;
         height: auto;
     }
-    .education-details .card{
+
+    .education-details .card {
         width: 100%;
-      
+
     }
 }
 
-.buttons button:hover {
+.buttons button:hover,.theme-button button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
@@ -106,37 +133,46 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
-#about, #project-container, .education-details {
-    /* background-color: #d4d4d6;  */
-    background-color: #e9e9f3; 
+
+#about,
+#project-container,
+.education-details {
+
+    background-color: #e9e9f3;
 }
 
-#foot{
+#foot {
     text-align: center;
-   
-   padding-top: 20px;
+
+    padding-top: 20px;
 }
-.footer{
+
+.footer {
     height: 50px;
-    background-color:  #0303f1;
+    background-color: #0c0c9e;
     color: white;
 }
-.card{
+
+.card {
     background-color: #d9d9df;
 }
-.navbar{
+
+.navbar {
     /* background-color:  #919197; */
-    background-color:  #0303f1;
+    background-color: #0c0c9e;
 }
-body{
+
+body {
     background-color: #f2f2ff;
 }
+
 /* Rotate animation */
 @keyframes rotateIn {
     0% {
         transform: rotateX(-360deg);
         opacity: 0;
     }
+
     100% {
         transform: rotateX(0deg);
         opacity: 1;
@@ -147,12 +183,13 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
     animation: rotateIn 1.5s ease-out forwards;
-     
+
 }
+
 .toggle-btn {
     padding: 10px 20px;
     border: none;
-    background: rgb(9, 87, 206);
+    background: rgb(13, 73, 163);
     color: white;
     font-size: 10px;
     cursor: pointer;
@@ -164,26 +201,33 @@ body{
 .toggle-btn:hover {
     background: darkblue;
 }
+
 .dark-mode {
     background-color: black;
     color: rgb(235, 229, 229);
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: white;
     color: black;
     transition: background 0.3s, color 0.3s;
 }
-.dark-mode #about,.dark-mode #project-container,.dark-mode .education-details{
+
+.dark-mode #about,
+.dark-mode #project-container,
+.dark-mode .education-details {
     background-color: black;
     color: rgb(236, 233, 233);
 }
-.dark-mode .card{
+
+.dark-mode .card {
     background-color: black;
     color: rgb(235, 229, 229);
     border: 1px solid white;
 }
-.theme-btn{
+
+.theme-button {
     display: flex;
     justify-content: end;
 }
